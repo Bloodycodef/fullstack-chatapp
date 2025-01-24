@@ -48,15 +48,15 @@ const SignUpPage = () => {
               >
                 <MessageSquare className="size-6 text-primary" />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Create Account</h1>
-              <p className="text-base-content/60">Get started with your free account</p>
+              <h1 className="text-2xl font-bold mt-2">Buat Akun Baru</h1>
+              <p className="text-base-content/60">Ayo Buat Akun Untuk Memulai Obrolan</p>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-medium">Full Name</span>
+                <span className="label-text font-medium">Nama Lengkap</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -65,7 +65,7 @@ const SignUpPage = () => {
                 <input
                   type="text"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="John Doe"
+                  placeholder="Wahyu Saputra"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                 />
@@ -83,7 +83,7 @@ const SignUpPage = () => {
                 <input
                   type="email"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="you@example.com"
+                  placeholder="wahyusaputra@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
@@ -126,16 +126,16 @@ const SignUpPage = () => {
                   Loading...
                 </>
               ) : (
-                "Create Account"
+                "Buat Akun"
               )}
             </button>
           </form>
 
           <div className="text-center">
             <p className="text-base-content/60">
-              Already have an account?{" "}
+              Sudah Punya Akun?{" "}
               <Link to="/login" className="link link-primary">
-                Sign in
+                Masuk
               </Link>
             </p>
           </div>

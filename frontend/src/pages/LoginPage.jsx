@@ -31,8 +31,8 @@ const LoginPage = () => {
               >
                 <MessageSquare className="w-6 h-6 text-primary" />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Welcome Back</h1>
-              <p className="text-base-content/60">Sign in to your account</p>
+              <h1 className="text-2xl font-bold mt-2">Selamat Datang</h1>
+              <p className="text-base-content/60">Masuk Dengan Akunmu</p>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ const LoginPage = () => {
                 <input
                   type="email"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="you@example.com"
+                  placeholder="wahyu@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
@@ -92,16 +92,16 @@ const LoginPage = () => {
                   Loading...
                 </>
               ) : (
-                "Sign in"
+                "Masuk"
               )}
             </button>
           </form>
 
           <div className="text-center">
             <p className="text-base-content/60">
-              Don&apos;t have an account?{" "}
+              Apakah Sudah Mempunyai Akun? jika belum{" "}
               <Link to="/signup" className="link link-primary">
-                Create account
+                Buat Akun Baru
               </Link>
             </p>
           </div>
@@ -110,8 +110,8 @@ const LoginPage = () => {
 
       {/* Right Side - Image/Pattern */}
       <AuthImagePattern
-        title={"Welcome back!"}
-        subtitle={"Sign in to continue your conversations and catch up with your messages."}
+        title={"Selamat Datang!"}
+        subtitle={"Masuk Dengan Akunmu"}
       />
     </div>
   );
